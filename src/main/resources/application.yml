@@ -1,0 +1,16 @@
+#HTTP (Tomcat) port no
+server:
+  port: 4568
+  
+
+#Specify details about Eureka server first
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:4567/eureka
+        
+#Spring related properties
+#the name with which it should be registred in Eureka server
+spring:
+  application:
+    name: helloworld-microservice
